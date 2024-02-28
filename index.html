@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="master.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script defer src="master.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <i class="fa-solid fa-bars menu-icon" onclick="openMenu()"></i>
+        <div id="wrapper">
+          <div id="close" onclick="closeMenu()">
+            <i class="fa-sharp fa-solid fa-plus close-icon"></i>
+          </div>
+          <ul id="menu">
+            <li>
+              <a href="#introduction" onclick="closeMenu()">Introduction</a>
+            </li>
+            <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+            <li><a href="#aboutMe" onclick="closeMenu()">About</a></li>
+            <li><a href="#myWork" onclick="closeMenu()">Works</a></li>
+            <li><a href="#contactMe" onclick="closeMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="introduction" id="introduction">
+        <article
+          class="content animate__animated animate__fadeInUp animate__delay-1.5s"
+        >
+          <h3 id="dynamicOpacity">Hello! I'm</h3>
+          <h1 id="dynamicOpacity">Christian Pe</h1>
+          <ul id="dynamicOpacity">
+            <li><span>Developer</span></li>
+            <li><span>Designer</span></li>
+          </ul>
+          <p id="dynamicOpacity">
+            I am passionate and motivated developer with a keen interest in
+            creating dynamic and user-friendly websites. With a solid foundation
+            in web development technologies and a commitment to continual
+            learning, I strive to deliver high-quality solutions that
+            exceed expectations.
+          </p>
+        </article>
+        <img
+          class="animate__animated animate__fadeInRight"
+          id="photo-me"
+          src="./resources/me.png"
+          alt=""
+        />
+      </section>
+      <section class="skills" id="skills">
+        <div class="wrapper">
+          <h2 id="skillHeader">Skills</h2>
+          <div class="skill-wrapper" id="dynamicOpacity">
+            <div
+              class="skillList animate__animated animate__fadeInLeft animate__slow-100ms"
+            >
+              <i class="fa-solid fa-code skills-icon"></i>
+              <h3>Web Development</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP - Laravel</li>
+              </ul>
+            </div>
+            <div
+              class="skillList animate__animated animate__fadeInLeft animate__slow-200ms"
+            >
+              <i class="fa-solid fa-laptop-code skills-icon"></i>
+              <h3>Tools</h3>
+              <ul>
+                <li>Version Control - GitHub</li>
+                <li>Database - MySQL</li>
+                <li>Google</li>
+                <li>Microsoft Office</li>
+              </ul>
+            </div>
+            <div
+              class="skillList animate__animated animate__fadeInLeft animate__slow-300ms"
+            >
+              <i class="fa-solid fa-chart-line skills-icon"></i>
+              <h3>Sales</h3>
+              <ul>
+                <li>Communication Skills</li>
+                <li>Adaptability</li>
+                <li>Time Management</li>
+                <li>Visual Merchandising</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="aboutMe" id="aboutMe">
+        <h2
+          id="aboutHeader"
+          class="animate__animated animate__fadeInUp animate__delay-1.2s"
+        >
+          About Me
+        </h2>
+        <div class="wrapper aboutWrapper" id="dynamicOpacity">
+          <div class="content">
+            <img
+              class="animate__animated animate__fadeInLeft"
+              id="photo-info"
+              src="./resources/about.png"
+              alt=""
+            />
+            <div
+              class="information animate__animated animate__fadeInUp animate__delay-1.5s"
+            >
+              <p>Name: <span>Christian Augot Pe</span></p>
+              <p>Date of Birth: <span>October 24, 1994</span></p>
+              <p>Address: <span>Rizal, Philippines</span></p>
+              <p>Email: <span>Christianpe2124@gmail.com</span></p>
+              <p>Phone: <span>(+63)9624295050</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="myWork" id="myWork">
+        <h2>My Works</h2>
+        <div class="myWork-wrapper">
+          <div class="gallery">
+            <a
+              target="_blank"
+              href="https://christianpe2124.github.io/7AvenuesCafe/"
+            >
+              <img src="./resources/7thAvenuesCafe.png" alt="" />
+            </a>
+            <div class="desc"><p>7th Avenues Cafe, HTML & CSS</p></div>
+          </div>
+
+          <div class="gallery">
+            <a
+              target="_blank"
+              href="https://christianpe2124.github.io/triviaQuiz/"
+            >
+              <img src="./resources/TriviaQuiz.png" alt="" />
+            </a>
+            <div class="desc">
+              <p>Simple Trivia Quiz, HTML, CSS, JavaScript</p>
+            </div>
+          </div>
+
+          <div class="gallery">
+            <a
+              target="_blank"
+              href="https://christianpe2124.github.io/passwordGenerator/"
+            >
+              <img src="./resources/PasswordGenerator.png" alt="" />
+            </a>
+            <div class="desc">
+              <p>Password generator, HTML, CSS, JavaScript</p>
+            </div>
+          </div>
+
+          <div class="gallery">
+            <a
+              target="_blank"
+              href="https://christianpe2124.github.io/login-signup/"
+            >
+              <img src="./resources/login-signup-design.png" alt="" />
+            </a>
+            <div class="desc">
+              <p>Simple Login & Sign-up Design, HTML, CSS</p>
+            </div>
+          </div>
+          <div class="gallery">
+            <a
+              target="_blank"
+              href="https://christianpe2124.github.io/checkout-page/"
+            >
+              <img src="./resources/creditCard.png" alt="" />
+            </a>
+            <div class="desc"><p>Credit card Design, HTML, CSS</p></div>
+          </div>
+
+          <div class="gallery">
+            <a
+              target="_blank"
+              href="https://christianpe2124.github.io/1st-landing-page/index.html"
+            >
+              <img src="./resources/firstLandingPage.png" alt="" />
+            </a>
+            <div class="desc"><p>My 1st landing page, HTML, CSS</p></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="connectLink">
+        <div class="footer-icons">
+          <div class="icons">
+            <a target="_blank" href="https://www.facebook.com/naitsirhc.ep/"><i class="fa-brands fa-facebook"></i></a>
+            <span>/</span>
+          </div>
+          <div class="icons">
+            <a target="_blank" href="https://www.linkedin.com/in/christian-augot-pe-7508a52a0/"><i class="fa-brands fa-linkedin"></i></i></a>
+            <span>/</span>
+          </div>
+          <div class="icons">
+            <a target="_blank" href="https://github.com/ChristianPe2124"> <i class="fa-brands fa-github"></i></a>
+            <span>/</span>
+          </div>
+          <div class="icons">
+            <a href="mailto:christianpe2124@gmail.com"><i class="fa-brands fa-google"></i></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          <span>Christian Augot Pe</span><br>
+          Copyright &copy 2024 
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+:root {
+  --ff-poppins: "Poppins", sans-serif;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --fw-black: 900;
+}
+* {
+  font-family: var(--ff-poppins);
+}
+.introduction {
+  min-height: clamp(610px, 50vw, 750px);
+  aspect-ratio: 0 / 1;
+}
+.skills .wrapper {
+  min-height: clamp(700px, 65vw, 800px);
+  aspect-ratio: 0 / 1;
+}
+.aboutMe {
+  min-height: clamp(700px, 65vw, 750px);
+  aspect-ratio: 0 / 1;
+}
+.myWork {
+  min-height: clamp(700px, 65vw, 750px);
+  aspect-ratio: 0 / 1;
+}
+footer {
+  height: 60vh;
+  aspect-ratio: 0 / 1;
+}
+.menu-icon {
+  position: fixed;
+  right: 0;
+  font-size: 30px;
+  margin: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+@media (width <= 400px) {
+  .menu-icon {
+    z-index: 1;
+  }
+}
+.close-icon {
+  font-size: 30px;
+  float: right;
+  margin: 20px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+ul li a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  margin: 5px 0px;
+  transition: all 0.3s ease;
+}
+
+#menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  opacity: 0;
+  transition: all 1s ease;
+}
+#wrapper {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #e3e7f3;
+  transition: all 0.6s ease;
+}
+#menu li a:hover {
+  background-color: #000;
+  color: #fff;
+}
+main .introduction .content h3 {
+  margin-top: 50px;
+}
+main .introduction .content h3,
+h2 {
+  color: yellow;
+  font-size: clamp(0.5rem, 4vw, 3rem);
+  font-weight: var(--fw-bold);
+  line-height: 1.5rem;
+}
+main .introduction ul {
+  margin-bottom: 20px;
+  height: clamp(45px, 7vw, 60px);
+  line-height: clamp(45px, 7vw, 49px);
+  overflow: hidden;
+}
+main .introduction ul li {
+  color: yellow;
+  position: relative;
+  top: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: var(--fw-bold);
+  list-style: none;
+  margin-bottom: 5px;
+  animation: slide 3s steps(2) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -100px;
+  }
+}
+main .introduction ul li span {
+  position: relative;
+  text-transform: uppercase;
+}
+main .introduction ul li span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-color: #242121;
+  animation: typing 1.5s steps(9) infinite;
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+main .introduction .content h1 {
+  font-size: clamp(0.5rem, 5vw, 100px);
+  font-weight: var(--fw-black);
+}
+main .introduction .content p {
+  font-size: clamp(0.5rem, 2.5vw, 1.2rem);
+}
+main .introduction {
+  padding-top: clamp(2px, 4vw, 10px);
+  background-color: #242121;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .introduction .content {
+  width: 45%;
+}
+main .introduction img {
+  filter: drop-shadow(0 0 10px white);
+  width: clamp(200px, 40vw, 650px);
+}
+
+@media (max-width: 700px) {
+  main .introduction {
+    flex-direction: column;
+  }
+  body section {
+    min-height: 690px;
+  }
+  main .introduction .content {
+    width: 90%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  main .introduction .content h3 {
+    font-size: 30px;
+  }
+  main .introduction .content h1 {
+    font-size: 40px;
+  }
+  main .introduction .content h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  main .introduction .content p {
+    font-size: 16px;
+  }
+}
+
+main .skills {
+  background-color: #242121;
+}
+main .skills h2 {
+  font-size: clamp(20px, 5vw, 60px);
+  font-weight: var(--fw-black);
+  color: #fff;
+  position: relative;
+  right: 36%;
+  padding: 20px 0;
+  border-bottom: 5px solid yellow;
+}
+main .skills .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .skills .skill-wrapper {
+  display: flex;
+  margin-top: 50px;
+  gap: 20px;
+}
+main .skills .skillList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: clamp(150px, 27vw, 490px);
+  min-height: clamp(300px, 30vw, 400px);
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #000;
+  transition: all 250ms ease-in-out;
+}
+main .skills .skillList ul {
+  margin-top: 30px;
+}
+main .skills .skillList ul li {
+  font-size: clamp(12px, 1vw, 20px);
+  font-weight: var(--fw-regular);
+}
+main .skills .skillList:hover {
+  border: 2px solid #000;
+  background-color: yellow;
+  color: #000;
+}
+main .skills .skillList .skills-icon {
+  font-size: clamp(30px, 3vw, 40px);
+  font-weight: var(--fw-black);
+}
+@media (max-width: 700px) {
+  main .skills h2 {
+    margin-top: 170px;
+    right: 0;
+    font-size: 40px;
+  }
+  main .skills .skill-wrapper {
+    flex-direction: column;
+  }
+  main .skills .skillList {
+    width: 300px;
+  }
+}
+
+main .aboutMe {
+  background-color: #242121;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+main .aboutMe h2 {
+  color: #fff;
+  font-size: clamp(40px, 5vw, 60px);
+  padding: clamp(10px, 2vw, 20px) 0;
+  border-bottom: 5px solid yellow;
+  margin-bottom: 40px;
+}
+main .aboutMe .wrapper .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .aboutMe .wrapper p {
+  color: #fff;
+  font-size: clamp(1.2rem, 2.5vw, 32px);
+  font-weight: var(--fw-black);
+}
+main .aboutMe .wrapper span {
+  font-weight: var(--fw-regular);
+}
+main .aboutMe img {
+  filter: drop-shadow(0 0 10px white);
+  width: clamp(200px, 40vw, 650px);
+}
+@media (max-width: 700px) {
+  main .aboutMe {
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .aboutMe .wrapper .content {
+    flex-direction: column;
+  }
+  main .aboutMe .wrapper .content img {
+    margin-bottom: 40px;
+  }
+}
+main .myWork {
+  background-color: #242121;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+main .myWork h2 {
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: clamp(40px, 5vw, 60px);
+  padding: clamp(15px, 3vw, 30px);
+  border-bottom: 5px solid yellow;
+  margin-bottom: 40px;
+}
+main .myWork .myWork-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main .myWork .myWork-wrapper .gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: clamp(300px, 20vw, 400px);
+  height: 200px;
+  margin-bottom: 45px;
+  transition: 250ms ease-in;
+  flex: 1 1 25rem;
+}
+@media (width < 375px) {
+  main .myWork .myWork-wrapper .gallery {
+    margin-bottom: 55px;
+  }
+}
+main .myWork .myWork-wrapper .gallery:hover {
+  border: 1px solid #777;
+  background-color: orangered;
+}
+
+main .myWork .myWork-wrapper .gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+main .myWork .myWork-wrapper .desc {
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+
+  p {
+    font-size: 16px, 2vw, 20px;
+  }
+}
+
+footer {
+  background-color: #242121;
+  color: #fff;
+}
+footer .footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+footer .connectLink .icons {
+  font-size: clamp(25px, 4vw, 32px);
+}
+footer .connectLink .icons a {
+  color: #fff;
+  margin-right: 15px;
+  text-decoration: none;
+}
+footer .connectLink .icons span {
+  margin-right: 10px;
+}
+footer .connectLink .icons a:hover {
+  color: blue;
+}
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+
+  p {
+    font-weight: var(--fw-medium);
+  }
+
+  span {
+    color: #fff;
+    font-weight: var(--fw-extrabold);
+    text-transform: uppercase;
+  }
+}
